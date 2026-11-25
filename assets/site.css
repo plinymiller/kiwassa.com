@@ -22,3 +22,4 @@ footer a{color:rgba(255,255,255,.72);text-decoration:none;text-shadow:0 1px 3px 
 footer a:hover,footer a:focus-visible{color:#fff;text-decoration:underline;text-underline-offset:3px}
 a:focus-visible{outline:2px solid #fff;outline-offset:3px}
 @media (max-height:500px){main{padding-top:40vh}}
+.pm-loc{white-space:nowrap}.pm-mark{display:inline-block;width:1.15em;height:1.15em;vertical-align:-.2em;margin:0 .15em}
