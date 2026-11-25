@@ -1,0 +1,24 @@
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{min-height:100vh;min-height:100svh;display:grid;grid-template-rows:1fr auto;color:#fff;
+ background-color:#1d4f86;
+ background-image:url(kiwassa-768.jpg);
+ background-image:image-set(url(kiwassa-768.webp) type("image/webp"),url(kiwassa-768.jpg) type("image/jpeg"));
+ background-size:cover;background-position:center;background-repeat:no-repeat;
+ font-family:Palatino,"Palatino Linotype","Book Antiqua","Iowan Old Style",Georgia,"Times New Roman",serif}
+@media (min-width:769px),(min-resolution:2dppx){body{
+ background-image:url(kiwassa-1280.jpg);
+ background-image:image-set(url(kiwassa-1280.webp) type("image/webp"),url(kiwassa-1280.jpg) type("image/jpeg"))}}
+@media (min-width:1281px),(min-width:769px) and (min-resolution:2dppx){body{
+ background-image:url(kiwassa-2048.jpg);
+ background-image:image-set(url(kiwassa-2048.webp) type("image/webp"),url(kiwassa-2048.jpg) type("image/jpeg"))}}
+main{display:grid;place-items:center;padding:0 5vw;padding-top:62vh}
+h1{margin:0;font-weight:400;font-style:italic;letter-spacing:.02em;line-height:1;
+ font-size:clamp(3.6rem,17vw,10rem);
+ text-shadow:0 2px 4px rgba(6,22,44,.55),0 8px 28px rgba(6,22,44,.5),0 0 60px rgba(6,22,44,.35)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+footer{text-align:center;padding:0 16px max(18px,env(safe-area-inset-bottom));font:11px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.16em;text-transform:uppercase}
+footer a{color:rgba(255,255,255,.72);text-decoration:none;text-shadow:0 1px 3px rgba(6,22,44,.7)}
+footer a:hover,footer a:focus-visible{color:#fff;text-decoration:underline;text-underline-offset:3px}
+a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+@media (max-height:500px){main{padding-top:40vh}}
